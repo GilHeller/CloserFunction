@@ -3,7 +3,7 @@ const formRegexValidation = (key) => {
         firstName:  /\w{2,}/,
         lastName:  /\w{2,}/,
         email: /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/,
-        age: /\d{1,3}$/
+        age: /^[1-9]([\d]+)?$/
     }
     return validationRegex[key];
 }
